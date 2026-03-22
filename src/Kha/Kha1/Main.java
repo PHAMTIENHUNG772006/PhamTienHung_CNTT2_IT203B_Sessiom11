@@ -1,6 +1,6 @@
 package Kha.Kha1;
 
-import BTTH.dao.MedicalAppointmentDB;
+import BTTH.dao.DatabaseConnection;
 
 import java.sql.*;
 public class Main {
@@ -15,7 +15,7 @@ public class Main {
         Statement statement = null;
 
         try {
-            connection = MedicalAppointmentDB.openConnection();
+            connection = DatabaseConnection.openConnection();
             statement = connection.createStatement();
 
         } catch (SQLException | ClassNotFoundException e) {

@@ -1,6 +1,6 @@
 package Gioi.Gioi2;
 
-import BTTH.dao.MedicalAppointmentDB;
+import BTTH.dao.DatabaseConnection;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
@@ -18,7 +18,7 @@ public class Main {
         Statement stmt = null;
 
         try {
-            connection = MedicalAppointmentDB.openConnection();
+            connection = DatabaseConnection.openConnection();
             stmt = connection.createStatement();
 
             String patientName = scanner.nextLine();

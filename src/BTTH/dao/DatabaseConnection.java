@@ -3,11 +3,10 @@ package BTTH.dao;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
-public class MedicalAppointmentDB {
+public class DatabaseConnection {
 
     public static final String DRIVER = "com.mysql.cj.jdbc.Driver";
-    //    public static final String URL = "jdbc:mysql://localhost:3306/MedicalAppointmentDB?createDatabaseIfNotExist=true";
-    public static final String URL = "jdbc:mysql://localhost:3306/jdbc?createDatabaseIfNotExist=true";
+        public static final String URL = "jdbc:mysql://localhost:3306/MedicalAppointmentDB?createDatabaseIfNotExist=true";
     public static final String USERNAME = "root";
     public static final String PASSWORD = "admin123";
 

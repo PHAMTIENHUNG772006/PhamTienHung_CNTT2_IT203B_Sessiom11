@@ -1,6 +1,6 @@
 package Gioi.Gioi1;
 
-import BTTH.dao.MedicalAppointmentDB;
+import BTTH.dao.DatabaseConnection;
 
 import java.sql.Connection;
 import java.sql.SQLException;
@@ -18,7 +18,7 @@ public class Main {
         Statement statement = null;
 
         try {
-            connection = MedicalAppointmentDB.openConnection();
+            connection = DatabaseConnection.openConnection();
             statement = connection.createStatement();
 
             System.out.println("Nhập id cần cập nhật");
