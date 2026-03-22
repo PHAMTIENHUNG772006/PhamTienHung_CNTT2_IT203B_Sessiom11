@@ -42,9 +42,9 @@ public class Main {
                 case 3:
                     service.statistic();
                     break;
-
                 case 4:
-                    System.exit(0);
+                    System.out.println("Thoát thành công");
+                   break;
             }
         }
     }
